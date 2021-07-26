@@ -1,0 +1,17 @@
+{
+    "app": "10",
+    "scope": "ALL",
+    "desktop": {
+        "js": [
+            "dist/js/index.js",
+            "dist/js/chunk-vendors.js"
+        ],
+        "css": [
+            "dist/css/index.css"
+        ]
+    },
+    "mobile": {
+        "js": [],
+        "css": []
+    }
+}

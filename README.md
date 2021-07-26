@@ -1,4 +1,4 @@
-# anquite
+# MFT2020_Vue_Anquite
 
 ## Project setup
 ```

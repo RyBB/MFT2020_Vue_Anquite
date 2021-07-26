@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <QuestionPage></QuestionPage>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import QuestionPage from "./components/QuestionPage.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    QuestionPage
   }
 };
 </script>
 
 <style>
+body {
+  background-color: #000;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: -5px 0 0 0;
+  height: 85vh;
+  background-image: url("https://cy-hwg.cybozu.com/k/api/space/blob/download.do/-/AdobeStock_39802936.jpeg?hash=54B15&id=1417&.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* kintoneのDOMを消す */
+.contents-actionmenu-gaia,
+.gaia-argoui-app-infobar-breadcrumb-iconlist,
+.gaia-argoui-app-toolbar-menu,
+.gaia-argoui-app-index-pager,
+.gaia-argoui-app-index-breadcrumb,
+.gaia-argoui-app-index-toolbar {
+  display: none;
 }
 </style>
